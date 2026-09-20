@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/school-logo.png.jpg">
+
+    <title>Jamoamiz | ITMA Andijon tumani ixtisoslashtirilgan maktabi</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+
+<body class="bg-white text-gray-900">
+
+
+    <!-- ====================================================== -->
+    <!-- CONTACT BAR + MAIN NAVIGATION                          -->
+    <!-- ====================================================== -->
+
+    <header class="sticky top-0 z-50">
+
+        <div class="bg-[#0D3557] text-white">
+
+            <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-3 text-sm
+                        sm:flex-row sm:items-center sm:justify-between lg:px-8">
+
+                <!-- LEFT: PHONE + EMAIL -->
+
+                <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+
+                    <!-- Phone -->
+
+                    <a href="tel:+998906241283"
+                       class="flex items-center gap-2 transition hover:text-blue-200">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             fill="none"
+                             viewBox="0 0 24 24"
+                             stroke-width="1.8"
+                             stroke="currentColor"
+                             class="h-4 w-4">
+
+                            <path stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106a1.125 1.125 0 0 0-1.173.417l-.97 1.293c-.451.602-1.303.802-1.954.467a12.035 12.035 0 0 1-5.345-5.345c-.335-.651-.135-1.503.467-1.954l1.293-.97c.41-.307.59-.83.417-1.173L8.153 3.103A1.125 1.125 0 0 0 7.062 2.25H5.69A2.25 2.25 0 0 0 3.44 4.5v2.25Z" />
+
+                        </svg>
+
+                        <span>+998 (90) 624-12-83</span>
+
+                    </a>
+
+
+                    <!-- Email -->
+
+                    <a href="mailto:andijontumani.im@mail.ru"
+                       class="flex items-center gap-2 transition hover:text-blue-200">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             fill="none"
+                             viewBox="0 0 24 24"
+                             stroke-width="1.8"
+                             stroke="currentColor"
+                             class="h-4 w-4">
+
+                            <path stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0-8.69 5.793a2.25 2.25 0 0 1-2.12 0L2.25 6.75" />
+
+                        </svg>
+
+                        <span>andijontumani.im@mail.ru</span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- RIGHT: SOCIAL MEDIA -->
+
+                <div class="flex items-center gap-3">
+
+                    <!-- Telegram -->
+
+                    <a href="https://t.me/ima_andijontuman"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Telegram"
+                       class="flex h-9 w-9 items-center justify-center rounded-full
+                              border border-blue-300/30 bg-white/5
+                              transition hover:bg-white/15">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="currentColor"
+                             class="h-5 w-5">
+
+                            <path d="M21.4 4.6 18.2 19c-.24 1.02-.86 1.27-1.75.79l-4.82-3.55-2.33 2.24c-.26.26-.48.48-.99.48l.35-4.91 8.94-8.08c.39-.35-.08-.55-.6-.2L6 12.94l-4.77-1.49c-1.04-.32-1.06-1.04.22-1.54L20.1 3.05c.88-.32 1.65.2 1.3 1.55Z"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- Instagram -->
+
+                    <a href="https://www.instagram.com/atimlife"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram"
+                       class="flex h-9 w-9 items-center justify-center rounded-full
+                              border border-blue-300/30 bg-white/5
+                              transition hover:bg-white/15">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.7"
+                             class="h-5 w-5">
+
+                            <rect x="3"
+                                  y="3"
+                                  width="18"
+                                  height="18"
+                                  rx="5"/>
+
+                            <circle cx="12"
+                                    cy="12"
+                                    r="4"/>
+
+                            <circle cx="17.5"
+                                    cy="6.5"
+                                    r="0.8"
+                                    fill="currentColor"
+                                    stroke="none"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- Facebook -->
+
+                    <a href="https://www.facebook.com/61565455573012/?locale=bs_BA"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Facebook"
+                       class="flex h-9 w-9 items-center justify-center rounded-full
+                              border border-blue-300/30 bg-white/5
+                              transition hover:bg-white/15">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="currentColor"
+                             class="h-5 w-5">
+
+                            <path d="M14 8h3V5h-3c-2.8 0-5 2.2-5 5v2H6v3h3v6h3v-6h3l1-3h-4v-2c0-1.1.9-2 2-2z"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ====================================================== -->
+        <!-- MAIN NAVIGATION                                        -->
+        <!-- ====================================================== -->
+
+        <nav class="relative border-b border-gray-200 bg-white shadow-sm">
+
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+                <div class="grid grid-cols-[1fr_auto_1fr] items-center py-4 lg:py-3">
+
+
+                    <!-- LEFT NAVIGATION -->
+
+                    <div class="flex items-center justify-end gap-5 pr-4 sm:gap-7 sm:pr-6">
+
+                        <a href="index.html#gallery"
+                           class="text-sm font-semibold text-gray-700
+                                  transition hover:text-[#164B7A]">
+
+                            Galereya
+
+                        </a>
+
+
+                        <a href="steachers.html"
+                           class="text-sm font-semibold text-gray-700
+                                  transition hover:text-[#164B7A]">
+
+                            Statistika
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- CENTER LOGO -->
+
+                    <a href="index.html"
+                       class="flex shrink-0 items-center justify-center">
+
+                        <div class="flex h-28 w-28 items-center justify-center
+                                    rounded-full bg-white p-2 shadow-lg
+                                    ring-4 ring-white">
+
+                            <img src="images/school-logo.png.jpg"
+                                 alt="ITMA Andijon tumani ixtisoslashtirilgan maktabi logotipi"
+                                 class="h-full w-full rounded-full object-contain">
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- RIGHT NAVIGATION -->
+
+                    <div class="flex items-center justify-start gap-5 pl-4
+                                sm:gap-7 sm:pl-6">
+
+
+                        <a href="about.html"
+                           class="text-sm font-semibold text-gray-700
+                                  transition hover:text-[#164B7A]">
+
+                            Biz haqimizda
+
+                        </a>
+
+
+                        <a href="services.html"
+                           class="text-sm font-semibold text-gray-700
+                                  transition hover:text-[#164B7A]">
+
+                            Ta'lim yo'nalishlari
+
+                        </a>
+
+
+                        <!-- ACTIVE PAGE -->
+
+                        <a href="team.html"
+                           class="text-sm font-semibold text-[#164B7A]">
+
+                            Jamoamiz
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ====================================================== -->
+    <!-- TEAM SECTION                                           -->
+    <!-- ====================================================== -->
+
+    <section class="bg-white">
+
+        <div class="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
+
+
+            <!-- HOME BUTTON -->
+
+            <div class="mb-10">
+
+                <a href="index.html"
+                   class="inline-flex items-center gap-2 rounded-xl bg-slate-100 px-5 py-3 text-sm font-semibold text-[#164B7A] transition hover:bg-blue-100">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke-width="2"
+                         stroke="currentColor"
+                         class="h-4 w-4">
+
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 19.5 8.25 12l7.5-7.5" />
+
+                    </svg>
+
+                    Bosh sahifa
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PAGE TITLE -->
+
+            <div class="mb-12">
+
+                <h1 class="text-4xl font-bold tracking-tight text-[#164B7A] sm:text-5xl">
+
+                    Bizning o'qituvchilar
+
+                </h1>
+
+
+                <div class="mt-4 h-1 w-20 rounded-full bg-[#164B7A]"></div>
+
+
+                <p class="mt-5 max-w-3xl text-lg leading-8 text-gray-600">
+
+                    Maktabimizning tajribali o‘qituvchilari, rahbariyati va
+                    ta’lim jarayonida o‘quvchilarni qo‘llab-quvvatlovchi
+                    mutaxassislar jamoasi.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- TEACHERS GRID                                    -->
+            <!-- ================================================= -->
+
+            <div class="grid gap-7 lg:grid-cols-2">
+
+
+                <!-- ================================================= -->
+                <!-- TEACHER 1 -->
+                <!-- ================================================= -->
+
+                <div class="group flex min-h-[270px] overflow-hidden rounded-3xl bg-slate-50 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+                    <div class="w-[42%] shrink-0">
+
+                        <img src="images/photo4.jpg"
+                             alt="Xusniddin Nurdinov"
+                             class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+
+                    </div>
+
+
+                    <div class="flex flex-1 flex-col justify-between p-7">
+
+                        <div>
+
+                            <p class="text-sm font-semibold uppercase tracking-wider text-[#164B7A]">
+
+                                Maktab direktori
+
+                            </p>
+
+
+                            <h2 class="mt-3 text-2xl font-bold text-[#164B7A]">
+
+                                Xusniddin Nurdinov
+
+                            </h2>
+
+
+                            <p class="mt-4 leading-7 text-gray-600">
+
+                                Xalqaro darajada tahsil olgan. Maktab faoliyati,
+                                ta’lim jarayoni va xodimlar faoliyatini boshqarish
+                                hamda rivojlantirish yo‘nalishida mas’uliyat
+                                olib boradi.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================================= -->
+                <!-- TEACHER 2 -->
+                <!-- ================================================= -->
+
+                <div class="group flex min-h-[270px] overflow-hidden rounded-3xl bg-slate-50 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+                    <div class="w-[42%] shrink-0">
+
+                        <img src="images/akbarali.jpg"
+                             alt="Akbarali Apsaliyev"
+                             class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+
+                    </div>
+
+
+                    <div class="flex flex-1 flex-col justify-between p-7">
+
+                        <div>
+
+                            <p class="text-sm font-semibold uppercase tracking-wider text-[#164B7A]">
+
+                                Maktab maslahatchisi
+
+                            </p>
+
+
+                            <h2 class="mt-3 text-2xl font-bold text-[#164B7A]">
+
+                                Akbarali Apsaliyev
+
+                            </h2>
+
+
+                            <p class="mt-4 leading-7 text-gray-600">
+
+                                CAP dasturining 2 ta sertifikati sohibi hamda
+                                UK Agent & Counsellor Training xalqaro tayyorgarlik
+                                kursidan o‘tgan tajribali mutaxassisdir. Oliy
+                                ta’lim muassasalariga hujjat topshirish jarayonida
+                                o‘quvchilarga maslahat va amaliy ko‘mak beradi.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================================= -->
+                <!-- TEACHER 3 -->
+                <!-- ================================================= -->
+
+                <div class="group flex min-h-[270px] overflow-hidden rounded-3xl bg-slate-50 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+                    <div class="w-[42%] shrink-0">
+
+                        <img src="images/photo7.jpg"
+                             alt="Yusupov Olimjon"
+                             class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+
+                    </div>
+
+
+                    <div class="flex flex-1 flex-col justify-between p-7">
+
+                        <div>
+
+                            <p class="text-sm font-semibold uppercase tracking-wider text-[#164B7A]">
+
+                                Maktab o‘quv ishlari bo‘yicha direktor o‘rinbosari
+
+                            </p>
+
+
+                            <h2 class="mt-3 text-2xl font-bold text-[#164B7A]">
+
+                                Yusupov Olimjon
+
+                            </h2>
+
+
+                            <p class="mt-4 leading-7 text-gray-600">
+
+                                Taʼlim jarayonining sifatini, oʻquv dasturlarining
+                                bajarilishini hamda oʻqituvchilarning pedagogik
+                                faoliyatini bevosita nazorat qiluvchi va
+                                muvofiqlashtiruvchi asosiy masʼul shaxsdir.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================================= -->
+                <!-- TEACHER 4 -->
+                <!-- ================================================= -->
+
+                <div class="group flex min-h-[270px] overflow-hidden rounded-3xl bg-slate-50 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+                    <div class="w-[42%] shrink-0">
+
+                        <img src="images/teacher4.jpg"
+                             alt="Po'latov Sardorbek"
+                             class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+
+                    </div>
+
+
+                    <div class="flex flex-1 flex-col justify-between p-7">
+
+                        <div>
+
+                            <p class="text-sm font-semibold uppercase tracking-wider text-[#164B7A]">
+
+                                Biologiya fani o‘qituvchisi
+
+                            </p>
+
+
+                            <h2 class="mt-3 text-2xl font-bold text-[#164B7A]">
+
+                                Po‘latov Sardorbek
+
+                            </h2>
+
+
+                            <p class="mt-4 leading-7 text-gray-600">
+
+                                O‘quvchilarni A-Level xalqaro dasturi hamda
+                                biologiya bo‘yicha milliy sertifikat va OTM
+                                imtihonlariga chuqurlashtirilgan tartibda
+                                yuqori saviyada tayyorlaydi.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================================= -->
+                <!-- TEACHER 5 -->
+                <!-- ================================================= -->
+
+                <div class="group flex min-h-[270px] overflow-hidden rounded-3xl bg-slate-50 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+                    <div class="w-[42%] shrink-0">
+
+                        <img src="images/teacher5.jpg"
+                             alt="Sobirov Baxromjon"
+                             class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+
+                    </div>
+
+
+                    <div class="flex flex-1 flex-col justify-between p-7">
+
+                        <div>
+
+                            <p class="text-sm font-semibold uppercase tracking-wider text-[#164B7A]">
+
+                                Matematika fani o‘qituvchisi
+
+                            </p>
+
+
+                            <h2 class="mt-3 text-2xl font-bold text-[#164B7A]">
+
+                                Sobirov Baxromjon
+
+                            </h2>
+
+
+                            <p class="mt-4 leading-7 text-gray-600">
+
+                                Respublika matematika fani chempioni bo‘lib,
+                                o‘quvchilarni xalqaro (SAT) va milliy olimpiadalar
+                                hamda OTM imtihonlariga eng yuqori darajada
+                                tayyorlaydi.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================================= -->
+                <!-- TEACHER 6 -->
+                <!-- ================================================= -->
+
+                <div class="group flex min-h-[270px] overflow-hidden rounded-3xl bg-slate-50 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+                    <div class="w-[42%] shrink-0">
+
+                        <img src="images/teacher6.jpg"
+                             alt="Yulchiyev Xumoyun"
+                             class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+
+                    </div>
+
+
+                    <div class="flex flex-1 flex-col justify-between p-7">
+
+                        <div>
+
+                            <p class="text-sm font-semibold uppercase tracking-wider text-[#164B7A]">
+
+                                Fizika fani o‘qituvchisi
+
+                            </p>
+
+
+                            <h2 class="mt-3 text-2xl font-bold text-[#164B7A]">
+
+                                Yulchiyev Xumoyun
+
+                            </h2>
+
+
+                            <p class="mt-4 leading-7 text-gray-600">
+
+                                Fizika fanidan milliy sertifikatga yuqori darajada
+                                tayyorlaydi.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================================== -->
+    <!-- FOOTER / CONTACT                                      -->
+    <!-- ====================================================== -->
+
+    <footer id="contact"
+            class="bg-[#164B7A] text-white">
+
+        <div class="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+
+            <!-- Footer Main Content -->
+
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+
+                <!-- School Information -->
+
+                <div class="lg:col-span-2">
+
+                    <div class="flex items-center gap-3">
+
+                        <img src="images/school-logo.png.jpg"
+                             alt="School Logo"
+                             class="h-11 w-11 object-contain">
+
+                        <div>
+
+                            <span class="block text-lg font-semibold tracking-wide">
+
+                                ITMA Andijon tumani ixtisoslashtirilgan maktabi
+
+                            </span>
+
+                            <p class="text-sm text-blue-200">
+
+                                Rasmiy veb-sayt
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="mt-6 max-w-md leading-7 text-blue-100">
+
+                        Biz o‘quvchilarga ta’lim bo‘yicha to‘g‘ri qarorlar qabul
+                        qilishlari va oliy ta’limga tayyorgarlik ko‘rishlari
+                        uchun zarur bo‘lgan akademik poydevor, yo‘l-yo‘riq va
+                        imkoniyatlarni taqdim etamiz.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Contact Information -->
+
+                <div>
+
+                    <h3 class="text-sm font-semibold uppercase tracking-widest text-white">
+
+                        Contact
+
+                    </h3>
+
+
+                    <div class="mt-5 space-y-4 text-sm text-blue-100">
+
+
+                        <!-- Address -->
+
+                        <div>
+
+                            <p class="font-medium text-white">
+
+                                Address
+
+                            </p>
+
+
+                            <p class="mt-1 leading-6">
+
+                                Kuyganyor shaharchasi, A. Qodiriy ko'chasi, 87<br>
+                                Andijon tumani, Andijon viloyati, 170600<br>
+                                O'zbekiston
+
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- Email -->
+
+                        <div>
+
+                            <p class="font-medium text-white">
+
+                                Email
+
+                            </p>
+
+
+                            <a href="mailto:andijontumani.im@mail.ru"
+                               class="mt-1 inline-block transition hover:text-white">
+
+                                andijontumani.im@mail.ru
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Phone & Links -->
+
+                <div>
+
+                    <h3 class="text-sm font-semibold uppercase tracking-widest text-white">
+
+                        Aloqada bo'ling
+
+                    </h3>
+
+
+                    <div class="mt-5 space-y-4 text-sm text-blue-100">
+
+
+                        <!-- Phone -->
+
+                        <div>
+
+                            <p class="font-medium text-white">
+
+                                Phone
+
+                            </p>
+
+
+                            <a href="tel:+998906241283"
+                               class="mt-1 inline-block transition hover:text-white">
+
+                                +998 (90) 624-12-83
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- Quick Links -->
+
+                        <div>
+
+                            <p class="font-medium text-white">
+
+                                Quick Links
+
+                            </p>
+
+
+                            <div class="mt-2 flex flex-col gap-2">
+
+
+                                <a href="index.html"
+                                   class="transition hover:text-blue-200">
+
+                                    Bosh sahifa
+
+                                </a>
+
+
+                                <a href="about.html"
+                                   class="transition hover:text-blue-200">
+
+                                    Biz haqimizda
+
+                                </a>
+
+
+                                <a href="services.html"
+                                   class="transition hover:text-blue-200">
+
+                                    Ta'lim yo'nalishlari
+
+                                </a>
+
+
+                                <a href="team.html"
+                                   class="transition hover:text-blue-200">
+
+                                    Jamoamiz
+
+                                </a>
+
+
+                                <a href="#contact"
+                                   class="transition hover:text-blue-200">
+
+                                    Bog'lanish
+
+                                </a>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Footer Bottom -->
+
+            <div class="mt-12 border-t border-blue-900 pt-6">
+
+                <div class="flex flex-col gap-3 text-sm text-blue-200 sm:flex-row sm:items-center sm:justify-between">
+
+                    <p>
+
+                        © 2026 ITMA Andijon tumani ixtisoslashtirilgan maktabi.
+                        All rights reserved.
+
+                    </p>
+
+
+                    <p>
+
+                        Official School Website
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

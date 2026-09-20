@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/school-logo.png.jpg">
+
+    <title>Biz haqimizda | ITMA Andijon tumani ixtisoslashtirilgan maktabi</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+
+<body class="bg-white text-gray-900">
+
+
+    <!-- ====================================================== -->
+    <!-- HEADER / NAVBAR                                        -->
+    <!-- ====================================================== -->
+
+    <header class="sticky top-0 z-50">
+
+        <!-- ====================================================== -->
+        <!-- CONTACT BAR                                            -->
+        <!-- ====================================================== -->
+
+        <div class="bg-[#0D3557] text-white">
+
+            <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-3 text-sm
+                        sm:flex-row sm:items-center sm:justify-between lg:px-8">
+
+                <!-- LEFT: PHONE + EMAIL -->
+                <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+
+                    <!-- Phone -->
+                    <a href="tel:+998906241283"
+                       class="flex items-center gap-2 transition hover:text-blue-200">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             fill="none"
+                             viewBox="0 0 24 24"
+                             stroke-width="1.8"
+                             stroke="currentColor"
+                             class="h-4 w-4">
+
+                            <path stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106a1.125 1.125 0 0 0-1.173.417l-.97 1.293c-.451.602-1.303.802-1.954.467a12.035 12.035 0 0 1-5.345-5.345c-.335-.651-.135-1.503.467-1.954l1.293-.97c.41-.307.59-.83.417-1.173L8.153 3.103A1.125 1.125 0 0 0 7.062 2.25H5.69A2.25 2.25 0 0 0 3.44 4.5v2.25Z" />
+
+                        </svg>
+
+                        <span>+998 (90) 624-12-83</span>
+
+                    </a>
+
+
+                    <!-- Email -->
+                    <a href="mailto:andijontumani.im@mail.ru"
+                       class="flex items-center gap-2 transition hover:text-blue-200">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             fill="none"
+                             viewBox="0 0 24 24"
+                             stroke-width="1.8"
+                             stroke="currentColor"
+                             class="h-4 w-4">
+
+                            <path stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0-8.69 5.793a2.25 2.25 0 0 1-2.12 0L2.25 6.75" />
+
+                        </svg>
+
+                        <span>andijontumani.im@mail.ru</span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- RIGHT: SOCIAL MEDIA -->
+                <div class="flex items-center gap-3">
+
+                    <!-- Telegram -->
+                    <a href="https://t.me/ima_andijontuman"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Telegram"
+                       class="flex h-9 w-9 items-center justify-center rounded-full
+                              border border-blue-300/30 bg-white/5
+                              transition hover:bg-white/15">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="currentColor"
+                             class="h-5 w-5">
+
+                            <path d="M21.4 4.6 18.2 19c-.24 1.02-.86 1.27-1.75.79l-4.82-3.55-2.33 2.24c-.26.26-.48.48-.99.48l.35-4.91 8.94-8.08c.39-.35-.08-.55-.6-.2L6 12.94l-4.77-1.49c-1.04-.32-1.06-1.04.22-1.54L20.1 3.05c.88-.32 1.65.2 1.3 1.55Z"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/atimlife"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram"
+                       class="flex h-9 w-9 items-center justify-center rounded-full
+                              border border-blue-300/30 bg-white/5
+                              transition hover:bg-white/15">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.7"
+                             class="h-5 w-5">
+
+                            <rect x="3"
+                                  y="3"
+                                  width="18"
+                                  height="18"
+                                  rx="5"/>
+
+                            <circle cx="12"
+                                    cy="12"
+                                    r="4"/>
+
+                            <circle cx="17.5"
+                                    cy="6.5"
+                                    r="0.8"
+                                    fill="currentColor"
+                                    stroke="none"/>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/61565455573012/?locale=bs_BA"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Facebook"
+                       class="flex h-9 w-9 items-center justify-center rounded-full
+                              border border-blue-300/30 bg-white/5
+                              transition hover:bg-white/15">
+
+                        <svg viewBox="0 0 24 24"
+                             fill="currentColor"
+                             class="h-5 w-5">
+
+                            <path d="M14 8h3V5h-3c-2.8 0-5 2.2-5 5v2H6v3h3v6h3v-6h3l1-3h-4v-2c0-1.1.9-2 2-2z"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ====================================================== -->
+        <!-- MAIN NAVIGATION                                        -->
+        <!-- ====================================================== -->
+
+        <nav class="relative border-b border-gray-200 bg-white shadow-sm">
+
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+                <div class="grid grid-cols-[1fr_auto_1fr] items-center py-4 lg:py-3">
+
+
+                    <!-- LEFT NAVIGATION -->
+
+                    <div class="flex items-center justify-end gap-5 pr-4 sm:gap-7 sm:pr-6">
+
+                        <a href="index.html#gallery"
+                           class="text-sm font-semibold text-gray-700
+                                  transition hover:text-[#164B7A]">
+
+                            Galereya
+
+                        </a>
+
+
+                        <a href="steachers.html"
+                           class="text-sm font-semibold text-gray-700
+                                  transition hover:text-[#164B7A]">
+
+                            Statistika
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- CENTER LOGO -->
+
+                    <a href="index.html"
+                       class="flex shrink-0 items-center justify-center">
+
+                        <div class="flex h-28 w-28 items-center justify-center
+                                    rounded-full bg-white p-2 shadow-lg
+                                    ring-4 ring-white">
+
+                            <img src="images/school-logo.png.jpg"
+                                 alt="ITMA Andijon tumani ixtisoslashtirilgan maktabi logotipi"
+                                 class="h-full w-full rounded-full object-contain">
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- RIGHT NAVIGATION -->
+
+                    <div class="flex items-center justify-start gap-5 pl-4 sm:gap-7 sm:pl-6">
+
+                        <a href="about.html"
+                           class="text-sm font-semibold text-[#164B7A]">
+
+                            Biz haqimizda
+
+                        </a>
+
+
+                        <a href="services.html"
+                           class="text-sm font-semibold text-gray-700
+                                  transition hover:text-[#164B7A]">
+
+                            Ta'lim yo'nalishlari
+
+                        </a>
+
+
+                        <a href="team.html"
+                           class="text-sm font-semibold text-gray-700
+                                  transition hover:text-[#164B7A]">
+
+                            Jamoamiz
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ====================================================== -->
+    <!-- PAGE NAVIGATION                                        -->
+    <!-- ====================================================== -->
+
+    <section class="border-b border-gray-200 bg-white">
+
+        <div class="mx-auto max-w-7xl px-6 py-5 lg:px-8">
+
+            <div class="flex flex-col gap-2">
+
+                <!-- Home -->
+                <a
+                    href="index.html"
+                    class="group flex w-fit items-center gap-3 rounded-lg px-3 py-2
+                           text-gray-600 transition hover:bg-blue-50
+                           hover:text-[#164B7A]"
+                >
+
+                    <!-- Home Icon -->
+                    <svg
+                        class="h-5 w-5 transition-transform duration-200
+                               group-hover:-translate-y-0.5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        viewBox="0 0 24 24"
+                    >
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3 10.5 12 3l9 7.5"
+                        />
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5.5 9.5V21h13V9.5M9.5 21v-6h5v6"
+                        />
+
+                    </svg>
+
+
+                    <span class="font-medium">
+                        Bosh sahifa
+                    </span>
+
+                </a>
+
+
+                <!-- Current Page -->
+                <div
+                    class="flex w-fit items-center gap-4 rounded-xl
+                           bg-[#EAF2F8] px-5 py-3 text-[#164B7A]"
+                >
+
+                    <span class="h-3 w-3 rounded-full bg-[#164B7A]"></span>
+
+                    <span class="text-2xl font-bold">
+                        Maktab haqida
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ====================================================== -->
+    <!-- MAIN ABOUT SECTION                                     -->
+    <!-- ====================================================== -->
+
+    <main>
+
+
+        <!-- ================================================== -->
+        <!-- SCHOOL INFORMATION / BACKGROUND IMAGE             -->
+        <!-- ================================================== -->
+
+        <section
+            class="relative overflow-hidden bg-cover bg-center"
+            style="background-image: url('images/back1.jpg');"
+        >
+
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-[#0D3557]/70"></div>
+
+
+            <div
+                class="relative mx-auto max-w-7xl px-6 py-16
+                       lg:px-8 lg:py-24"
+            >
+
+                <div
+                    class="grid items-center gap-10
+                           lg:grid-cols-[0.8fr_1.5fr]"
+                >
+
+
+                    <!-- ====================================== -->
+                    <!-- LEFT: TWO VERTICAL IMAGES              -->
+                    <!-- ====================================== -->
+
+                    <div class="flex flex-col gap-6">
+
+                        <!-- Image 1 -->
+                        <div class="overflow-hidden rounded-3xl shadow-2xl">
+
+                            <img
+                                src="images/rasm1.jpg"
+                                alt="ITMA Andijon tumani ixtisoslashtirilgan maktabi"
+                                class="h-64 w-full object-cover transition
+                                       duration-500 hover:scale-105
+                                       sm:h-72 lg:h-80"
+                            >
+
+                        </div>
+
+
+                        <!-- Image 2 -->
+                        <div class="overflow-hidden rounded-3xl shadow-2xl">
+
+                            <img
+                                src="images/rasm2.jpg"
+                                alt="Maktab o‘quvchilari"
+                                class="h-64 w-full object-cover transition
+                                       duration-500 hover:scale-105
+                                       sm:h-72 lg:h-80"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ====================================== -->
+                    <!-- RIGHT: INFORMATION BOX                 -->
+                    <!-- ====================================== -->
+
+                    <div
+                        class="rounded-3xl bg-[#0D3557]/95 p-8 text-white
+                               shadow-2xl backdrop-blur-sm
+                               sm:p-10 lg:p-12"
+                    >
+
+                        <p
+                            class="text-sm font-semibold uppercase
+                                   tracking-[0.25em] text-blue-200"
+                        >
+                            Maktab haqida
+                        </p>
+
+
+                        <h1
+                            class="mt-4 text-3xl font-bold tracking-tight
+                                   sm:text-4xl lg:text-5xl"
+                        >
+                            Zamonaviy ta’lim va keng imkoniyatlar
+                        </h1>
+
+
+                        <div
+                            class="mt-7 space-y-5 text-base leading-8
+                                   text-blue-50 sm:text-lg"
+                        >
+
+                            <p>
+                                ITMA Andijon tumani ixtisoslashtirilgan maktabi
+                                o‘quvchilarga sifatli va tizimli ta’lim berishga,
+                                ularning bilim va ko‘nikmalarini rivojlantirishga
+                                hamda mustaqil fikrlash qobiliyatini shakllantirishga
+                                yo‘naltirilgan ta’lim muhitini yaratishga intiladi.
+                            </p>
+
+
+                            <p>
+                                Maktabda o‘quvchilarning akademik salohiyatini
+                                rivojlantirish bilan bir qatorda, fanlarga bo‘lgan
+                                qiziqishini kuchaytirish, ilmiy izlanishlarga
+                                yo‘naltirish va turli tanlov hamda olimpiadalarda
+                                ishtirok etishlari uchun imkoniyatlar yaratishga
+                                e’tibor qaratiladi.
+                            </p>
+
+
+                            <p>
+                                Bizning yondashuvimiz o‘quvchilarning bugungi
+                                ta’lim ehtiyojlari bilan birga, ularning kelajakdagi
+                                akademik va kasbiy yo‘nalishlarini ham hisobga oladi.
+                            </p>
+
+                        </div>
+
+
+                        <div class="mt-8 border-t border-white/20 pt-6">
+
+                            <p class="text-sm leading-6 text-blue-200">
+                                Bilim, izlanish va rivojlanish uchun zamonaviy
+                                ta’lim muhiti.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================== -->
+        <!-- ACHIEVEMENTS                                       -->
+        <!-- ================================================== -->
+
+        <section class="bg-white">
+
+            <div
+                class="mx-auto max-w-7xl px-6 py-16
+                       lg:px-8 lg:py-20"
+            >
+
+                <div class="grid gap-8 md:grid-cols-2">
+
+
+                    <!-- ====================================== -->
+                    <!-- ACHIEVEMENTS CARD                      -->
+                    <!-- ====================================== -->
+
+                    <div
+                        class="group rounded-3xl border border-gray-200
+                               bg-white p-8 shadow-sm transition duration-300
+                               hover:-translate-y-1 hover:shadow-xl
+                               sm:p-10"
+                    >
+
+                        <!-- Icon -->
+                        <div
+                            class="flex h-16 w-16 items-center justify-center
+                                   rounded-2xl bg-[#EAF2F8] text-[#164B7A]"
+                        >
+
+                            <svg
+                                class="h-8 w-8"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                viewBox="0 0 24 24"
+                            >
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z"
+                                />
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20"
+                                />
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8 7h8M8 10h6"
+                                />
+
+                            </svg>
+
+                        </div>
+
+
+                        <h2 class="mt-7 text-2xl font-bold text-[#164B7A]">
+                            Bizning yutuqlarimiz
+                        </h2>
+
+
+                        <div class="mt-4 space-y-4 leading-8 text-gray-600">
+
+                            <p>
+                                10 nafardan ortiq o‘quvchi Buyuk Britaniya,
+                                AQSh, Janubiy Koreya va Xitoyda tahsil olmoqda.
+                            </p>
+
+                            <p>
+                                2025–2026-o‘quv yilining birinchi semestrida
+                                o‘quvchilar jami 131 ta sertifikat qo‘lga
+                                kiritdilar: shulardan 26 tasi xalqaro
+                                (14 ta IELTS, 12 ta SAT) va 105 tasi milliy
+                                sertifikatdir.
+                            </p>
+
+                            <p>
+                                10–11-sinf o‘quvchilari 110 ta sertifikatga
+                                (25 ta xalqaro, 85 ta milliy) ega bo‘lishdi.
+                            </p>
+
+                            <div
+                                class="rounded-2xl bg-gray-50 p-5
+                                       text-sm leading-7"
+                            >
+
+                                <p>
+                                    <span class="font-semibold text-[#164B7A]">
+                                        11-sinf:
+                                    </span>
+                                    72 ta sertifikat
+                                    (20 ta xalqaro, 52 ta milliy)
+                                </p>
+
+                                <p class="mt-2">
+                                    <span class="font-semibold text-[#164B7A]">
+                                        10-sinf:
+                                    </span>
+                                    38 ta sertifikat
+                                    (5 ta xalqaro, 33 ta milliy)
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-7">
+
+                            <span
+                                class="inline-flex items-center gap-2
+                                       text-sm font-semibold text-blue-700"
+                            >
+
+                                Batafsil ma’lumot
+
+                                <svg
+                                    class="h-4 w-4 transition-transform
+                                           duration-200
+                                           group-hover:translate-x-1"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h14M13 6l6 6-6 6"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ====================================== -->
+                    <!-- OLYMPIAD RESULTS CARD                 -->
+                    <!-- ====================================== -->
+
+                    <div
+                        class="group rounded-3xl border border-gray-200
+                               bg-white p-8 shadow-sm transition duration-300
+                               hover:-translate-y-1 hover:shadow-xl
+                               sm:p-10"
+                    >
+
+                        <!-- Icon -->
+                        <div
+                            class="flex h-16 w-16 items-center justify-center
+                                   rounded-2xl bg-[#EAF2F8] text-[#164B7A]"
+                        >
+
+                            <svg
+                                class="h-8 w-8"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                viewBox="0 0 24 24"
+                            >
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8 4h8v4a4 4 0 0 1-8 0V4Z"
+                                />
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8 6H5v2a3 3 0 0 0 3 3M16 6h3v2a3 3 0 0 1-3 3"
+                                />
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M12 12v4M8.5 20h7M10 16h4"
+                                />
+
+                            </svg>
+
+                        </div>
+
+
+                        <h2 class="mt-7 text-2xl font-bold text-[#164B7A]">
+                            Olimpiada natijalarimiz
+                        </h2>
+
+
+                        <div class="mt-4 space-y-5 leading-8 text-gray-600">
+
+                            <div>
+
+                                <p class="font-semibold text-[#164B7A]">
+                                    Tuman bosqichi
+                                </p>
+
+                                <p>
+                                    84 nafar o‘quvchi sovrindor bo‘ldi:
+                                    1-o‘rin — 9 ta,
+                                    2-o‘rin — 8 ta,
+                                    3-o‘rin — 9 ta.
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <p class="font-semibold text-[#164B7A]">
+                                    Viloyat bosqichi
+                                </p>
+
+                                <p>
+                                    26 nafar o‘quvchi muvaffaqiyatli qatnashdi:
+                                    1-o‘rin — 3 ta,
+                                    2-o‘rin — 1 ta,
+                                    3-o‘rin — 1 ta.
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <p class="font-semibold text-[#164B7A]">
+                                    Xalqaro bosqich
+                                </p>
+
+                                <p>
+                                    16 nafar o‘quvchi milliy saralash bosqichida,
+                                    6 nafar o‘quvchi esa bevosita xalqaro bosqichda
+                                    ishtirok etdi.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-7">
+
+                            <span
+                                class="inline-flex items-center gap-2
+                                       text-sm font-semibold text-blue-700"
+                            >
+
+                                Natijalarni ko‘rish
+
+                                <svg
+                                    class="h-4 w-4 transition-transform
+                                           duration-200
+                                           group-hover:translate-x-1"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h14M13 6l6 6-6 6"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ====================================================== -->
+    <!-- FOOTER                                                  -->
+    <!-- ====================================================== -->
+
+    <footer class="bg-[#0D3557] text-white">
+
+        <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+
+            <div
+                class="flex flex-col gap-6
+                       md:flex-row md:items-center md:justify-between"
+            >
+
+                <div>
+
+                    <h2 class="text-lg font-semibold">
+                        ITMA Andijon tumani ixtisoslashtirilgan maktabi
+                    </h2>
+
+                    <p class="mt-2 text-sm text-blue-200">
+                        Rasmiy veb-sayt
+                    </p>
+
+                </div>
+
+
+                <div class="text-sm text-blue-200">
+                    © 2026 ITMA Andijon tumani ixtisoslashtirilgan maktabi
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
