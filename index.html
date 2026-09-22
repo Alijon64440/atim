@@ -50,11 +50,10 @@
     <!-- CONTACT BAR                                            -->
     <!-- ====================================================== -->
 
-    <!-- This stays in normal document flow and scrolls away -->
     <div id="contactBar" class="bg-[#0D3557] text-white">
 
-        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-3 text-sm
-                    sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 text-sm
+                    sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
 
             <!-- LEFT: PHONE + EMAIL -->
             <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
@@ -62,7 +61,7 @@
                 <!-- Phone -->
                 <a href="tel:+998906241283"
                    class="flex items-center gap-2 rounded-lg border border-white/20
-                          bg-white/10 px-4 py-2 text-white transition hover:bg-white/20">
+                          bg-white/10 px-3 py-2 text-white transition hover:bg-white/20 sm:px-4">
 
                     <svg xmlns="http://www.w3.org/2000/svg"
                          fill="none"
@@ -85,7 +84,7 @@
                 <!-- Email -->
                 <a href="mailto:andijontumani.im@mail.ru"
                    class="flex items-center gap-2 rounded-lg border border-white/20
-                          bg-white/10 px-4 py-2 text-white transition hover:bg-white/20">
+                          bg-white/10 px-3 py-2 text-white transition hover:bg-white/20 sm:px-4">
 
                     <svg xmlns="http://www.w3.org/2000/svg"
                          fill="none"
@@ -196,39 +195,35 @@
     <!-- MAIN NAVIGATION                                        -->
     <!-- ====================================================== -->
 
-    <!-- Fixed navbar -->
     <nav id="mainNav"
          class="fixed left-0 top-0 z-50 w-full border-b border-transparent
                 bg-transparent">
 
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-            <div class="grid grid-cols-[1fr_auto_1fr] items-center py-4 lg:py-3">
+            <!-- ================================================== -->
+            <!-- DESKTOP NAVIGATION                                 -->
+            <!-- ================================================== -->
+
+            <div class="hidden md:grid grid-cols-[1fr_auto_1fr] items-center py-4 lg:py-3">
 
                 <!-- LEFT NAVIGATION -->
-
                 <div class="flex items-center justify-end gap-5 pr-4 sm:gap-7 sm:pr-6">
 
                     <a href="index.html#gallery"
                        class="nav-link text-sm font-semibold text-white transition hover:text-blue-200">
-
                         Galereya
-
                     </a>
-
 
                     <a href="steachers.html"
                        class="nav-link text-sm font-semibold text-white transition hover:text-blue-200">
-
                         Statistika
-
                     </a>
 
                 </div>
 
 
                 <!-- CENTER LOGO -->
-
                 <a href="index.html"
                    class="flex shrink-0 items-center justify-center">
 
@@ -246,30 +241,119 @@
 
 
                 <!-- RIGHT NAVIGATION -->
-
                 <div class="flex items-center justify-start gap-5 pl-4 sm:gap-7 sm:pl-6">
 
                     <a href="about.html"
                        class="nav-link text-sm font-semibold text-white transition hover:text-blue-200">
-
                         Biz haqimizda
-
                     </a>
-
 
                     <a href="services.html"
                        class="nav-link text-sm font-semibold text-white transition hover:text-blue-200">
-
                         Ta'lim yo'nalishlari
-
                     </a>
-
 
                     <a href="team.html"
                        class="nav-link text-sm font-semibold text-white transition hover:text-blue-200">
-
                         Jamoamiz
+                    </a>
 
+                </div>
+
+            </div>
+
+
+            <!-- ================================================== -->
+            <!-- MOBILE NAVIGATION                                  -->
+            <!-- ================================================== -->
+
+            <div class="flex items-center justify-between py-3 md:hidden">
+
+                <!-- MOBILE LOGO -->
+                <a href="index.html"
+                   class="flex items-center">
+
+                    <div class="flex h-16 w-16 items-center justify-center
+                                rounded-xl bg-white p-1.5 shadow-lg ring-2 ring-white">
+
+                        <img src="images/school-logo.png.jpg"
+                             alt="ITMA Andijon tumani ixtisoslashtirilgan maktabi logotipi"
+                             class="h-full w-full rounded-lg object-contain">
+
+                    </div>
+
+                </a>
+
+
+                <!-- HAMBURGER BUTTON -->
+                <button id="mobileMenuButton"
+                        type="button"
+                        aria-label="Menyu"
+                        aria-expanded="false"
+                        class="flex h-11 w-11 items-center justify-center
+                               rounded-lg bg-white/90 text-gray-800 shadow-md
+                               transition hover:bg-white">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke-width="2"
+                         stroke="currentColor"
+                         class="h-6 w-6">
+
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+
+            <!-- ================================================== -->
+            <!-- MOBILE MENU                                        -->
+            <!-- ================================================== -->
+
+            <div id="mobileMenu"
+                 class="hidden md:hidden border-t border-gray-200 bg-white shadow-lg">
+
+                <div class="flex flex-col py-2">
+
+                    <a href="index.html#gallery"
+                       class="mobile-nav-link px-5 py-3 text-sm font-semibold
+                              text-gray-700 transition hover:bg-gray-100
+                              hover:text-[#164B7A]">
+                        Galereya
+                    </a>
+
+                    <a href="steachers.html"
+                       class="mobile-nav-link px-5 py-3 text-sm font-semibold
+                              text-gray-700 transition hover:bg-gray-100
+                              hover:text-[#164B7A]">
+                        Statistika
+                    </a>
+
+                    <a href="about.html"
+                       class="mobile-nav-link px-5 py-3 text-sm font-semibold
+                              text-gray-700 transition hover:bg-gray-100
+                              hover:text-[#164B7A]">
+                        Biz haqimizda
+                    </a>
+
+                    <a href="services.html"
+                       class="mobile-nav-link px-5 py-3 text-sm font-semibold
+                              text-gray-700 transition hover:bg-gray-100
+                              hover:text-[#164B7A]">
+                        Ta'lim yo'nalishlari
+                    </a>
+
+                    <a href="team.html"
+                       class="mobile-nav-link px-5 py-3 text-sm font-semibold
+                              text-gray-700 transition hover:bg-gray-100
+                              hover:text-[#164B7A]">
+                        Jamoamiz
                     </a>
 
                 </div>
@@ -291,7 +375,7 @@
         <!-- HERO WITH VIDEO BACKGROUND                         -->
         <!-- ================================================== -->
 
-        <section class="relative h-[650px] overflow-hidden">
+        <section class="relative h-[650px] overflow-hidden sm:h-[650px]">
 
             <!-- Background Video -->
             <video
@@ -313,18 +397,19 @@
 
             <!-- Hero Content -->
             <div class="relative z-10 mx-auto flex h-full max-w-5xl items-center
-                        justify-center px-6 text-center">
+                        justify-center px-5 text-center sm:px-6">
 
                 <div>
 
-                    <p class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-blue-200">
+                    <p class="mb-4 text-xs font-bold uppercase tracking-[0.2em]
+                              text-blue-200 sm:text-sm sm:tracking-[0.25em]">
 
                         Ixtisoslashtirilgan maktab
 
                     </p>
 
 
-                    <h1 class="text-4xl font-bold leading-tight tracking-tight
+                    <h1 class="text-3xl font-bold leading-tight tracking-tight
                                text-white sm:text-5xl lg:text-6xl">
 
                         ITMA Andijon tumani
@@ -336,7 +421,8 @@
                     </h1>
 
 
-                    <p class="mx-auto mt-7 max-w-3xl text-base leading-8 text-gray-200 sm:text-lg">
+                    <p class="mx-auto mt-6 max-w-3xl text-sm leading-7
+                              text-gray-200 sm:mt-7 sm:text-lg sm:leading-8">
 
                         O‘quvchilarning bilim, ijodkorlik va mustaqil fikrlash qobiliyatlarini
                         rivojlantirishga hamda ularni kelajakdagi ta’lim va kasbiy faoliyatga
@@ -346,7 +432,7 @@
 
 
                     <!-- Buttons -->
-                    <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+                    <div class="mt-8 flex flex-col justify-center gap-3 sm:mt-9 sm:flex-row">
 
                         <a
                             href="about.html"
@@ -385,26 +471,20 @@
 
         <section id="gallery" class="bg-white py-16 lg:py-20">
 
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
                 <div class="mb-10 text-center">
 
                     <p class="text-sm font-semibold uppercase tracking-widest text-blue-700">
-
                         Maktabimiz hayotidan
-
                     </p>
 
                     <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-
                         Maktabimiz
-
                     </h2>
 
                     <p class="mx-auto mt-4 max-w-2xl text-gray-600">
-
                         Maktabimizdagi ta’lim, tadbirlar va o‘quvchilar hayotidan lavhalar.
-
                     </p>
 
                 </div>
@@ -454,84 +534,72 @@
                         <div id="galleryTrack"
                              class="flex gap-5 transition-transform duration-500 ease-in-out">
 
-                            <!-- IMAGE 1 -->
                             <div class="gallery-slide">
                                 <img src="images/photo1.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 2 -->
                             <div class="gallery-slide">
                                 <img src="images/photo2.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 3 -->
                             <div class="gallery-slide">
                                 <img src="images/photo3.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 4 -->
                             <div class="gallery-slide">
                                 <img src="images/photo4.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 5 -->
                             <div class="gallery-slide">
                                 <img src="images/photo5.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 6 -->
                             <div class="gallery-slide">
                                 <img src="images/photo6.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 7 -->
                             <div class="gallery-slide">
                                 <img src="images/photo7.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 8 -->
                             <div class="gallery-slide">
                                 <img src="images/photo8.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 9 -->
                             <div class="gallery-slide">
                                 <img src="images/photo9.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 10 -->
                             <div class="gallery-slide">
                                 <img src="images/photo10.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 11 -->
                             <div class="gallery-slide">
                                 <img src="images/photo11.jpg"
                                      alt="Maktabimiz"
                                      class="h-64 w-full rounded-2xl object-cover sm:h-72 lg:h-80">
                             </div>
 
-                            <!-- IMAGE 12 -->
                             <div class="gallery-slide">
                                 <img src="images/photo12.jpg"
                                      alt="Maktabimiz"
@@ -593,7 +661,7 @@
 
         <section class="bg-gray-50">
 
-            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+            <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
 
                 <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
@@ -601,41 +669,31 @@
                     <div>
 
                         <p class="text-sm font-bold uppercase tracking-[0.2em] text-blue-700">
-
                             Maktabimiz haqida
-
                         </p>
 
                         <h2 class="mt-3 text-3xl font-bold leading-tight text-[#164B7A] sm:text-4xl">
-
                             Zamonaviy ta’lim va keng imkoniyatlar
-
                         </h2>
 
                         <p class="mt-6 text-base leading-8 text-gray-600">
-
                             ITMA Andijon tumani ixtisoslashtirilgan maktabi
                             o‘quvchilarning bilim olish, mustaqil fikrlash, ijodiy
                             yondashuv va o‘z qobiliyatlarini rivojlantirishlari
                             uchun zamonaviy ta’lim muhitini yaratishga intiladi.
-
                         </p>
 
                         <p class="mt-4 text-base leading-8 text-gray-600">
-
                             Maktabimizda o‘quvchilarning fanlarga bo‘lgan qiziqishini
                             oshirish, ularni olimpiadalar, tanlovlar va oliy ta’limga
                             tayyorlash hamda kelajakdagi maqsadlarini belgilashga
                             ko‘maklashishga alohida e’tibor qaratiladi.
-
                         </p>
 
                         <p class="mt-4 text-base leading-8 text-gray-600">
-
                             Bizning maqsadimiz — har bir o‘quvchiga o‘z salohiyatini
                             namoyon qilish va kelajakdagi muvaffaqiyatlari uchun
                             mustahkam poydevor yaratish imkoniyatini berishdir.
-
                         </p>
 
                         <div class="mt-8">
@@ -671,39 +729,31 @@
                     <div class="grid grid-cols-2 gap-4">
 
                         <div class="group overflow-hidden rounded-2xl bg-gray-200 shadow-sm">
-
                             <img src="images/about1.jpg"
                                  alt="Maktab hayoti"
                                  class="h-52 w-full object-cover transition duration-500
                                         group-hover:scale-105 sm:h-60">
-
                         </div>
 
                         <div class="group overflow-hidden rounded-2xl bg-gray-200 shadow-sm">
-
                             <img src="images/about2.jpg"
                                  alt="Maktab o‘quvchilari"
                                  class="h-52 w-full object-cover transition duration-500
                                         group-hover:scale-105 sm:h-60">
-
                         </div>
 
                         <div class="group overflow-hidden rounded-2xl bg-gray-200 shadow-sm">
-
                             <img src="images/about3.jpg"
                                  alt="Maktabdagi ta’lim jarayoni"
                                  class="h-52 w-full object-cover transition duration-500
                                         group-hover:scale-105 sm:h-60">
-
                         </div>
 
                         <div class="group overflow-hidden rounded-2xl bg-gray-200 shadow-sm">
-
                             <img src="images/about4.jpg"
                                  alt="Maktab tadbiri"
                                  class="h-52 w-full object-cover transition duration-500
                                         group-hover:scale-105 sm:h-60">
-
                         </div>
 
                     </div>
@@ -721,22 +771,19 @@
 
         <section class="bg-white py-16 lg:py-20">
 
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
-                <div class="mb-10 flex items-end justify-between gap-6">
+                <div class="mb-10 flex flex-col items-start justify-between gap-6
+                            sm:flex-row sm:items-end">
 
                     <div>
 
                         <p class="text-sm font-semibold uppercase tracking-widest text-blue-700">
-
                             Ta’lim
-
                         </p>
 
                         <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-
                             Ta’lim yo‘nalishlari haqida
-
                         </h2>
 
                     </div>
@@ -802,15 +849,11 @@
                         <div class="mt-12">
 
                             <h3 class="text-2xl font-bold leading-tight">
-
                                 Xalqaro fanlarni o‘zlashtirish
-
                             </h3>
 
                             <p class="mt-3 text-lg text-white/90">
-
                                 SAT, IELTS, TOEFL, AP, A-Level, AS-Level
-
                             </p>
 
                         </div>
@@ -851,15 +894,11 @@
                         <div class="mt-12">
 
                             <h3 class="text-2xl font-bold leading-tight">
-
                                 Xalqaro tillar
-
                             </h3>
 
                             <p class="mt-3 text-lg text-white/90">
-
                                 O‘zbek, ingliz, rus
-
                             </p>
 
                         </div>
@@ -903,15 +942,11 @@
                         <div class="mt-12">
 
                             <h3 class="text-2xl font-bold leading-tight">
-
                                 Milliy dastur
-
                             </h3>
 
                             <p class="mt-3 text-lg text-white/90">
-
                                 Milliy sertifikat, DTM fanlari
-
                             </p>
 
                         </div>
@@ -931,7 +966,7 @@
 
         <footer id="contact" class="bg-[#164B7A] text-white">
 
-            <div class="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+            <div class="mx-auto max-w-7xl px-5 py-14 sm:px-6 lg:px-8">
 
                 <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
 
@@ -947,15 +982,11 @@
                             <div>
 
                                 <span class="block text-lg font-semibold tracking-wide">
-
                                     ITMA Andijon tumani ixtisoslashtirilgan maktabi
-
                                 </span>
 
                                 <p class="text-sm text-blue-200">
-
                                     Rasmiy veb-sayt
-
                                 </p>
 
                             </div>
@@ -978,9 +1009,7 @@
                     <div>
 
                         <h3 class="text-sm font-semibold uppercase tracking-widest text-white">
-
                             Contact
-
                         </h3>
 
                         <div class="mt-5 space-y-4 text-sm text-blue-100">
@@ -988,9 +1017,7 @@
                             <div>
 
                                 <p class="font-medium text-white">
-
                                     Address
-
                                 </p>
 
                                 <p class="mt-1 leading-6">
@@ -1007,9 +1034,7 @@
                             <div>
 
                                 <p class="font-medium text-white">
-
                                     Email
-
                                 </p>
 
                                 <a href="mailto:andijontumani.im@mail.ru"
@@ -1030,9 +1055,7 @@
                     <div>
 
                         <h3 class="text-sm font-semibold uppercase tracking-widest text-white">
-
                             Aloqada bo‘ling
-
                         </h3>
 
                         <div class="mt-5 space-y-4 text-sm text-blue-100">
@@ -1040,9 +1063,7 @@
                             <div>
 
                                 <p class="font-medium text-white">
-
                                     Phone
-
                                 </p>
 
                                 <a href="tel:+998906241283"
@@ -1058,46 +1079,34 @@
                             <div>
 
                                 <p class="font-medium text-white">
-
                                     Quick Links
-
                                 </p>
 
                                 <div class="mt-2 flex flex-col gap-2">
 
                                     <a href="index.html"
                                        class="transition hover:text-blue-200">
-
                                         Bosh sahifa
-
                                     </a>
 
                                     <a href="about.html"
                                        class="transition hover:text-blue-200">
-
                                         Biz haqimizda
-
                                     </a>
 
                                     <a href="services.html"
                                        class="transition hover:text-blue-200">
-
                                         Ta’lim yo‘nalishlari
-
                                     </a>
 
                                     <a href="team.html"
                                        class="transition hover:text-blue-200">
-
                                         Jamoamiz
-
                                     </a>
 
                                     <a href="#contact"
                                        class="transition hover:text-blue-200">
-
                                         Bog‘lanish
-
                                     </a>
 
                                 </div>
@@ -1118,16 +1127,12 @@
                                 sm:flex-row sm:items-center sm:justify-between">
 
                         <p>
-
                             © 2026 ITMA Andijon tumani ixtisoslashtirilgan maktabi.
                             All rights reserved.
-
                         </p>
 
                         <p>
-
                             Official School Website
-
                         </p>
 
                     </div>
@@ -1142,37 +1147,50 @@
 
 
     <!-- ================================================== -->
-    <!-- NAVBAR SCROLL SCRIPT                               -->
+    <!-- NAVBAR SCROLL + MOBILE MENU SCRIPT                -->
     <!-- ================================================== -->
 
     <script>
 
-        const mainNav = document.getElementById("mainNav");
-        const contactBar = document.getElementById("contactBar");
-        const navLinks = document.querySelectorAll(".nav-link");
+        const mainNav =
+            document.getElementById("mainNav");
 
+        const contactBar =
+            document.getElementById("contactBar");
+
+        const navLinks =
+            document.querySelectorAll(".nav-link");
+
+        const mobileMenuButton =
+            document.getElementById("mobileMenuButton");
+
+        const mobileMenu =
+            document.getElementById("mobileMenu");
+
+
+        /*
+         * Navbar scroll behavior
+         */
 
         function updateNavbar() {
 
             /*
              * At the top:
-             * - navbar sits directly below the contact bar
+             * - navbar sits directly below contact bar
              * - transparent
-             * - white text
+             * - desktop links are white
              *
              * After scrolling:
              * - navbar moves to the very top
              * - white background
-             * - dark text
+             * - desktop links become dark
              */
 
             if (window.scrollY > 50) {
 
-                /* Move navbar to top */
                 mainNav.style.top = "0px";
 
 
-                /* White navbar */
                 mainNav.classList.remove(
                     "bg-transparent",
                     "border-transparent"
@@ -1185,7 +1203,6 @@
                 );
 
 
-                /* Dark text */
                 navLinks.forEach(link => {
 
                     link.classList.remove(
@@ -1202,11 +1219,10 @@
 
             } else {
 
-                /* Put navbar below contact bar */
-                mainNav.style.top = contactBar.offsetHeight + "px";
+                mainNav.style.top =
+                    contactBar.offsetHeight + "px";
 
 
-                /* Transparent navbar */
                 mainNav.classList.remove(
                     "bg-white",
                     "border-gray-200",
@@ -1219,7 +1235,6 @@
                 );
 
 
-                /* White text */
                 navLinks.forEach(link => {
 
                     link.classList.remove(
@@ -1237,6 +1252,52 @@
             }
 
         }
+
+
+        /*
+         * Mobile hamburger menu
+         */
+
+        mobileMenuButton.addEventListener(
+            "click",
+            function () {
+
+                const isHidden =
+                    mobileMenu.classList.toggle("hidden");
+
+
+                mobileMenuButton.setAttribute(
+                    "aria-expanded",
+                    String(!isHidden)
+                );
+
+            }
+        );
+
+
+        /*
+         * Close mobile menu after clicking a link
+         */
+
+        mobileMenu
+            .querySelectorAll("a")
+            .forEach(link => {
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+                        mobileMenu.classList.add("hidden");
+
+                        mobileMenuButton.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                    }
+                );
+
+            });
 
 
         window.addEventListener(
@@ -1262,239 +1323,237 @@
 
     <script>
 
-        document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
 
-            const track =
-                document.getElementById("galleryTrack");
+                const track =
+                    document.getElementById("galleryTrack");
 
-            const prevButton =
-                document.getElementById("galleryPrev");
+                const prevButton =
+                    document.getElementById("galleryPrev");
 
-            const nextButton =
-                document.getElementById("galleryNext");
+                const nextButton =
+                    document.getElementById("galleryNext");
 
-            const dotsContainer =
-                document.getElementById("galleryDots");
-
-
-            if (
-                !track ||
-                !prevButton ||
-                !nextButton ||
-                !dotsContainer
-            ) {
-
-                return;
-
-            }
+                const dotsContainer =
+                    document.getElementById("galleryDots");
 
 
-            const slides =
-                Array.from(
-                    track.querySelectorAll(".gallery-slide")
-                );
-
-
-            if (slides.length === 0) {
-
-                return;
-
-            }
-
-
-            let currentIndex = 0;
-
-
-            function getSlidesPerView() {
-
-                if (window.innerWidth <= 640) {
-
-                    return 1;
-
-                }
-
-                if (window.innerWidth <= 1024) {
-
-                    return 2;
-
-                }
-
-                return 3;
-
-            }
-
-
-            function getMaxIndex() {
-
-                return Math.max(
-                    0,
-                    slides.length - getSlidesPerView()
-                );
-
-            }
-
-
-            function updateCarousel() {
-
-                const maxIndex =
-                    getMaxIndex();
-
-
-                if (currentIndex > maxIndex) {
-
-                    currentIndex = maxIndex;
-
-                }
-
-
-                const slideWidth =
-                    slides[0].offsetWidth;
-
-                const gap = 20;
-
-
-                const movement =
-                    currentIndex *
-                    (slideWidth + gap);
-
-
-                track.style.transform =
-                    `translateX(-${movement}px)`;
-
-
-                prevButton.disabled =
-                    currentIndex === 0;
-
-
-                nextButton.disabled =
-                    currentIndex >= maxIndex;
-
-
-                updateDots();
-
-            }
-
-
-            function updateDots() {
-
-                dotsContainer.innerHTML = "";
-
-
-                const maxIndex =
-                    getMaxIndex();
-
-
-                for (
-                    let i = 0;
-                    i <= maxIndex;
-                    i++
+                if (
+                    !track ||
+                    !prevButton ||
+                    !nextButton ||
+                    !dotsContainer
                 ) {
 
-                    const dot =
-                        document.createElement("button");
-
-
-                    dot.type = "button";
-
-
-                    dot.setAttribute(
-                        "aria-label",
-                        `Rasm ${i + 1}`
-                    );
-
-
-                    dot.className =
-                        "h-2.5 w-2.5 rounded-full transition-all duration-300";
-
-
-                    if (i === currentIndex) {
-
-                        dot.classList.add(
-                            "w-7",
-                            "bg-blue-700"
-                        );
-
-                    } else {
-
-                        dot.classList.add(
-                            "bg-gray-300",
-                            "hover:bg-gray-400"
-                        );
-
-                    }
-
-
-                    dot.addEventListener(
-                        "click",
-                        function () {
-
-                            currentIndex = i;
-
-                            updateCarousel();
-
-                        }
-                    );
-
-
-                    dotsContainer.appendChild(dot);
+                    return;
 
                 }
 
-            }
+
+                const slides =
+                    Array.from(
+                        track.querySelectorAll(".gallery-slide")
+                    );
 
 
-            nextButton.addEventListener(
-                "click",
-                function () {
+                if (slides.length === 0) {
+
+                    return;
+
+                }
+
+
+                let currentIndex = 0;
+
+
+                function getSlidesPerView() {
+
+                    if (window.innerWidth <= 640) {
+                        return 1;
+                    }
+
+                    if (window.innerWidth <= 1024) {
+                        return 2;
+                    }
+
+                    return 3;
+
+                }
+
+
+                function getMaxIndex() {
+
+                    return Math.max(
+                        0,
+                        slides.length - getSlidesPerView()
+                    );
+
+                }
+
+
+                function updateCarousel() {
 
                     const maxIndex =
                         getMaxIndex();
 
 
-                    if (currentIndex < maxIndex) {
+                    if (currentIndex > maxIndex) {
 
-                        currentIndex++;
+                        currentIndex = maxIndex;
 
-                        updateCarousel();
+                    }
+
+
+                    const slideWidth =
+                        slides[0].offsetWidth;
+
+                    const gap = 20;
+
+
+                    const movement =
+                        currentIndex *
+                        (slideWidth + gap);
+
+
+                    track.style.transform =
+                        `translateX(-${movement}px)`;
+
+
+                    prevButton.disabled =
+                        currentIndex === 0;
+
+
+                    nextButton.disabled =
+                        currentIndex >= maxIndex;
+
+
+                    updateDots();
+
+                }
+
+
+                function updateDots() {
+
+                    dotsContainer.innerHTML = "";
+
+
+                    const maxIndex =
+                        getMaxIndex();
+
+
+                    for (
+                        let i = 0;
+                        i <= maxIndex;
+                        i++
+                    ) {
+
+                        const dot =
+                            document.createElement("button");
+
+
+                        dot.type = "button";
+
+
+                        dot.setAttribute(
+                            "aria-label",
+                            `Rasm ${i + 1}`
+                        );
+
+
+                        dot.className =
+                            "h-2.5 w-2.5 rounded-full transition-all duration-300";
+
+
+                        if (i === currentIndex) {
+
+                            dot.classList.add(
+                                "w-7",
+                                "bg-blue-700"
+                            );
+
+                        } else {
+
+                            dot.classList.add(
+                                "bg-gray-300",
+                                "hover:bg-gray-400"
+                            );
+
+                        }
+
+
+                        dot.addEventListener(
+                            "click",
+                            function () {
+
+                                currentIndex = i;
+
+                                updateCarousel();
+
+                            }
+                        );
+
+
+                        dotsContainer.appendChild(dot);
 
                     }
 
                 }
-            );
 
 
-            prevButton.addEventListener(
-                "click",
-                function () {
+                nextButton.addEventListener(
+                    "click",
+                    function () {
 
-                    if (currentIndex > 0) {
+                        const maxIndex =
+                            getMaxIndex();
 
-                        currentIndex--;
+
+                        if (currentIndex < maxIndex) {
+
+                            currentIndex++;
+
+                            updateCarousel();
+
+                        }
+
+                    }
+                );
+
+
+                prevButton.addEventListener(
+                    "click",
+                    function () {
+
+                        if (currentIndex > 0) {
+
+                            currentIndex--;
+
+                            updateCarousel();
+
+                        }
+
+                    }
+                );
+
+
+                window.addEventListener(
+                    "resize",
+                    function () {
 
                         updateCarousel();
 
                     }
-
-                }
-            );
+                );
 
 
-            window.addEventListener(
-                "resize",
-                function () {
+                updateCarousel();
 
-                    updateCarousel();
-
-                }
-            );
-
-
-            updateCarousel();
-
-        });
+            }
+        );
 
     </script>
 
 </body>
 </html>
-
